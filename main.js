@@ -1,6 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
+//const { prefix, token } = require('./config.json');
 const { MessageAttachment } = require("discord.js"); 
 
 const client = new Discord.Client();
@@ -103,4 +103,4 @@ const bar = new MessageAttachment('https://media.discordapp.net/attachments/8670
 			welcomeChannel.send(msgEmbed)})
 			
 
-client.login(token);
+client.login(process.env.J_TOKEN);
